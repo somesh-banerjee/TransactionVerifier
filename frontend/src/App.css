@@ -27,6 +27,20 @@
 .crypto-tx{
   float: left;
   width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 45%;
+}
+
+.online-tx{
+  float: right;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 45%;
 }
 
