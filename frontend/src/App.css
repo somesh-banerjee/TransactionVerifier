@@ -32,6 +32,7 @@
   align-items: center;
   justify-content: center;
   max-width: 45%;
+  min-width: 40%;
 }
 
 .online-tx{
@@ -42,6 +43,7 @@
   align-items: center;
   justify-content: center;
   max-width: 45%;
+  min-width: 40%;
 }
 
 .App-link {

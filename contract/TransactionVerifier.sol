@@ -51,4 +51,9 @@ contract TransactionVerifier{
     function verifyoTransaction(string memory _paymentId) public view returns(bool){
         return otransactions[_paymentId].present;
     }
+    
+    function verifyoTransaction(string memory _paymentId, string memory _ipfs) public view returns(bool){
+        bytes32 _hash = keccak256(abi.encode(_paymentId, _ipfs));
+        return otransactions[_paymentId].hash == _hash;
+    }
 }

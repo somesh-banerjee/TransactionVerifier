@@ -1,2 +1,2 @@
 //In Mumbai
-export const contractAddress = "0x8b652c73adeC3dD2AeE72aaf8608871679D9eC15"// process.env.REACT_APP_CONTRACT_ADDRESS;
+export const contractAddress = "0x720eE50ad4b8F923Af6E1F6E059925B4Dd481d8d"// process.env.REACT_APP_CONTRACT_ADDRESS;

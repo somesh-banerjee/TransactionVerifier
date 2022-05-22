@@ -12,6 +12,7 @@ function App() {
         <VCT />
       </div>
       <div className='online-tx'>
+        <NOT />
         <VOT />
       </div>
     </div>
