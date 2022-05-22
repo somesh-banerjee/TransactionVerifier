@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
 import { ethers } from 'ethers'
 import Web3Modal from 'web3modal'
 import { Button, Form, Message } from "semantic-ui-react";
@@ -29,7 +29,6 @@ function App() {
             let transaction = await Contract.makeTransaction(receiver,{value: ethers.utils.parseEther(amount)})
             console.log(transaction)
             let tx = await transaction.wait()
-            let event = tx.events[0]
             console.log(tx)
         } catch (er) {
             console.log(er)
@@ -51,7 +50,7 @@ function App() {
             <Button type='submit' onClick={submit}>Make Transaction</Button>
         </Form>
         {
-            txId && <Message>{`Transaction Id: ${txId}`}</Message>
+            txId && <Message info>{`Transaction Id: ${txId}`}</Message>
         }
         <hr />
       </div>

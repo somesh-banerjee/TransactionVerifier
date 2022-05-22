@@ -24,6 +24,12 @@
   color: white;
 }
 
+.crypto-tx{
+  float: left;
+  width: auto;
+  max-width: 45%;
+}
+
 .App-link {
   color: #61dafb;
 }
